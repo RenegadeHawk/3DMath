@@ -1,5 +1,6 @@
 #pragma once
 #include <exception>
+#include <iostream>
 class Vector3
 {
 private:
@@ -79,6 +80,12 @@ public:
 	{
 		return (x*a.x + y*a.y + z*a.z);
 	}
+
+	friend std::ostream& operator<<(std::ostream& os, const Vector3& v)
+	{
+		os << v.x << ',' << v.y << ',' << v.z;
+		return os;
+	}
 };
 	//Cross product
 	inline Vector3 Cross(const Vector3 &v0, const Vector3 &v1)
@@ -117,4 +124,4 @@ public:
 		return Vector3(dx, dy, dz);
 	}
 	
-
+	
