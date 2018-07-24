@@ -80,11 +80,20 @@ public:
 	{
 		return (x*a.x + y*a.y + z*a.z);
 	}
+	
+	/*Overloading I/O operators*/
 
+	//Overloading output stream operator
 	friend std::ostream& operator<<(std::ostream& os, const Vector3& v)
 	{
-		os << v.x << ',' << v.y << ',' << v.z;
+		os <<'(' <<v.x << ',' << v.y << ',' << v.z<<')';
 		return os;
+	}
+
+	//Overloading input stream operator
+	friend std::istream &operator>>(std::istream  &is, Vector3& v) {
+		is >> v.x >> v.y >> v.z;
+		return is;
 	}
 };
 	//Cross product
