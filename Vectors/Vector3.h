@@ -36,18 +36,12 @@ public:
 	// + operator (addition)
 	Vector3 operator+ (const Vector3 &v) 
 	{
-		x += v.x;
-		y += v.y;
-		z += v.z;
-		return *this;
+		return Vector3(x + v.x, y + v.y, z + v.z);
 	}
 	// - operator (subtraction)
 	Vector3 operator- (const Vector3 &v)
 	{
-		x -= v.x;
-		y -= v.y;
-		z -= v.z;
-		return *this;
+		return Vector3(x - v.x, y - v.y, z - v.z);
 	}
 	// normalization
 	Vector3 normalized() const

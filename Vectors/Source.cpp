@@ -10,7 +10,7 @@ int main(void)
 	std::cout << "Enter second vector"<<std::endl;
 	std::cin >> v1;
 	std::cout << "Vector v1 = " << v1 <<std::endl;
-	std::cout << "sum of the two vectors = " << v0 + v1 << std::endl;
+	std::cout << "sum of the two vectors = " << v0 + v1 <<" " <<v0 <<" "<< v1<< std::endl;
 	std::cout << "Dot product of the two vectors = " << v0 * v1 << std::endl;
 	std::cout << "Cross product of the two vectors = " << Cross(v0 ,v1) << std::endl;
 	std::cout << "Angle between the two vectors = " << Angle(v0,v1) << std::endl;
