@@ -1,2 +1,2 @@
-# Vector3
-Simple implementation of Vector3 class
+# 3D Math
+Simple implementations of 3D math library
